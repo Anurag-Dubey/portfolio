@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script src="https://kit.fontawesome.com/413d9a9f42.js" crossorigin="anonymous"></script>
+  <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Development</p>
+                <h1>Hi,I'm<span> Anurag Dubey </span><br></h1>
+            </div>
+        </div>
+    </div>
+<!-- -------------------------about----------------------------------------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myuserimg.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Heloo friends,I'm Anurag.I'm a B-tech final year student from Guru Ghasidas Vishwavidyalya and I love exploring</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Certifications</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tag" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Designing a Webpage using HTML CSS and JavaScript</li>
+                            <li><span>Backend Development</span><br>Creating API'S by using framework like NodeJS and Django <br> Using lnaguages like JavaScript Php and Database as MongoDB and MySql</li>
+                            <li><span>Coding</span><br>C++ coder</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Deeeevelopment</span><br>Designing a Web interface</li>
+                            <li><span>Backend Development</span><br>Designing a Web interface</li>
+                            <li><span>Coding</span><br>C++ coder</li>
+                        </ul>
+                    </div> -->
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graduation(2019-2023)</span><br>GURU GHASIDAS VISHWAVIDYALYA<br>8.09cgpa</li>
+                            <li><span>Senior Secondary School(2017-2019)</span><br>B.D PUBLIC SCHOOL<br>92.2%</li>
+                            <li><span>SecondarySchool(2017)</span><br>ST PAUL SCHOOL<br>9.8cgpa</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------services---------------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Learned to built various types of responsive website,submitted various projects and earned the certificate</p>
+                    <a href="https://freecodecamp.org/certification/fcc619665a4-8ef2-41d7-bb50-2abe2ad3f48e/responsive-web-design">CLICK HERE</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>VLSI SoC design and Verilog HDL</h2>
+                    <p>Learned about VLSI and its programming on FPGA board using Verilog </p>
+                    <a href="images/certificate (2).pdf">CLICK HERE</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Cyber-Security</h2>
+                    <p>Completed the course of Cyber-Security essentials and learned about various types of malware,attacks and method of prevention</p>
+                    <a href="images/AnuragDubey-Cybersecurity Es-certificate (2).pdf">CLICK HERE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------portfolio------------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="1">
+                <div class="layer"> 
+                    <h3>Social Media App</h3>
+                    <p>
+                        The App helps you connect world.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="1">
+                <div class="layer"> 
+                    <h3>Music App</h3>
+                    <p>
+                        The App helps you play music.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="1">
+                <div class="layer"> 
+                    <h3>Online App</h3>
+                    <p>
+                        The App helps you to do shopping.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+<!-------------------------contact------------------>
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>anuragkumardubey11a.ak@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9334288147</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/anurag-dubey-53aaaa20b/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Anurag-Dubey"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/ANURAGD90769447"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/pandit_anurag.dubey/"><i class="fa-brands fa-instagram"></i></a>  
+            </div>
+            <a href="https://docs.google.com/document/d/1P_wCj67PBu-6OcixMSVK8xI_vQQdGQca/edit" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> copyright anurag. icon </p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link"); 
+        }
+        for(tabcontent  of tabcontents){
+            tabcontent.classList.remove("active-tag"); 
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tag");    
+    }
+
+
+
+</script>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwAF3u3yvkp6oK3Khi1yP_pnvzv1makhE_DCUHZsgzzuMi8XyQui1ljt-alF8QK6HUWxA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+               msg.innerHTML="Message Sent Sucessfully"
+               setTimeout(function(){
+                msg.innerHTML=""
+
+        },5000)
+        form.reset()
+    })
+        
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  </body>
+</html>
